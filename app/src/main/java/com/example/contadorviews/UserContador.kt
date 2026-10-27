@@ -22,7 +22,7 @@ class UserContador : AppCompatActivity() {
 
         val editTextComptador = findViewById<EditText>(R.id.editTextContador)
 
-        val contador = intent.getIntExtra("NUMBER_COUNT",0).apply { editTextComptador.setText("$this") }
+        var contador = intent.getIntExtra("NUMBER_COUNT",0).apply { editTextComptador.setText("$this") }
 
         val inicio = findViewById<Button>(R.id.inicio)
 
